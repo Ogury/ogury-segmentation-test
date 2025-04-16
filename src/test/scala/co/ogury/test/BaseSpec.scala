@@ -1,11 +1,13 @@
 package co.ogury.test
 
 import org.apache.spark.sql.SparkSession
-import org.scalatest.{FlatSpec, GivenWhenThen, Matchers}
+import org.scalatest.GivenWhenThen
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
 import scala.util.{Failure, Success, Try}
 
-trait BaseSpec extends FlatSpec with Matchers with GivenWhenThen {
+trait BaseSpec extends AnyFlatSpec with Matchers with GivenWhenThen {
 
   def withSparkSession[T](code: SparkSession => T): T = {
     val session = SparkSession.builder().master("local[*]").getOrCreate()
