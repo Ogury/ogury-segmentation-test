@@ -24,7 +24,6 @@ The main method expects 4 parameters:
 4. segmentationPeriod 
   
 ### Running the job
-  - When running the job from an IDE, make sure you include the "provided" dependencies in the classpath.
   - To run using command line, start sbt shell then execute `run <param> <param> ...`
 ### To Do:
 You need to implement the methods in `src/main/scala/co/ogury/segmentation/SegmentationJob.scala` to do the following:
@@ -43,9 +42,8 @@ You need to implement the methods in `src/main/scala/co/ogury/segmentation/Segme
     747;active
 ```
 
-  - We have provided a unit tests for 2 segmentation cases. We recommend that you implement the remaining cases in `src/test/scala/co/ogury/segmentation/SegmentationJobSpec.scala` in order to validate you work.
-  - run the job with endDate = 2017-12-31 and segmentationPeriod = 365
-  - commit your changes.
+  - We have provided unit tests for 2 segmentation cases. We recommend that you implement the remaining cases in `src/test/scala/co/ogury/segmentation/SegmentationJobSpec.scala` in order to validate your work.
+  - Run the job with endDate = 2017-12-31 and segmentationPeriod = 365
   - Add the whole project files and results to an archive and send it by email.
   
 
